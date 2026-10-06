@@ -1,10 +1,53 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Needla — Privacy Policy</title><style>body{font:16px/1.6 Georgia,'New York',serif;max-width:720px;margin:40px auto;padding:0 20px;color:#1E2340;background:#F6EFE4}h1{font-size:30px}h2{font-size:19px;margin-top:28px}a{color:#E0482A}</style></head><body><h1>Needla — Privacy Policy</h1><p><em>Last updated: September 30, 2026</em></p>
-<p>Needla helps you identify vinyl records, find their pressing and estimate their value. We built it to collect as little as possible.</p>
-<h2>Your crate</h2><p>The records you save, their condition grades and your answers in onboarding are stored only on your device. We never receive them. Deleting the app deletes them.</p>
-<h2>Photos you scan</h2><p>When you scan a sleeve (and only after you agree on the in-app consent screen), the photo is sent over an encrypted connection to our server, which passes it to an AI vision model (an OpenAI model run by Replicate) to read the artist, title and catalog number. The photo is used only to answer that request and is not stored by us. Replicate and OpenAI process it under their API data policies, which do not use API data to train models.</p>
-<h2>Record lookups</h2><p>Searches, pressings and prices are requested from the public Discogs database. These requests contain the search text or record ID only and are not linked to you.</p>
-<h2>Purchases</h2><p>Subscriptions are processed by Apple. We do not receive your payment details. To check whether your subscription is active and to show the right offer, the app uses Adapty, which receives an anonymous app user ID, your purchase history and basic in-app events (for example, that a paywall was shown). This data is not linked to your identity and is not used for tracking or advertising.</p>
-<h2>What we don't do</h2><p>No accounts, no advertising SDKs, no tracking across apps or websites, no sale or sharing of personal data.</p>
-<h2>Service providers</h2><p>Google Cloud / Firebase (hosts our server), Replicate and OpenAI (sleeve reading), Adapty (subscription status), Discogs (public record database).</p>
-<h2>Children</h2><p>The app is not directed at children under 13 and does not knowingly collect their personal data.</p>
-<h2>Contact</h2><p>Questions: <a href="mailto:netkaktakto@gmail.com">netkaktakto@gmail.com</a></p></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="What Needla sends off your phone and when.">
+<title>Privacy — Needla</title>
+<style>
+
+:root{--paper:#F6EFE4;--sleeve:#FFFAF2;--ink:#1E2340;--soft:#5E6180;--needle:#FF5E3A;--mustard:#F2B33D;--line:#DDD2C0;--band:#1E2340;--bandtxt:#F6EFE4}
+@media (prefers-color-scheme:dark){:root{--paper:#1A1618;--sleeve:#252023;--ink:#F3EADF;--soft:#A9A0A4;--needle:#FF7250;--mustard:#F5BE55;--line:#3A3236;--band:#0F0D0E;--bandtxt:#F3EADF}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 "Helvetica Neue",Helvetica,Arial,sans-serif}
+a{color:var(--needle)}
+header{background:var(--band);color:var(--bandtxt);position:relative;overflow:hidden}
+header .in{max-width:860px;margin:0 auto;padding:26px 20px 24px;position:relative;z-index:1}
+header:after{content:"";position:absolute;right:-70px;top:-70px;width:230px;height:230px;border-radius:50%;background:repeating-radial-gradient(circle,#00000000 0 5px,#ffffff14 5px 6px),radial-gradient(circle,var(--needle) 0 22%,#00000000 23%);opacity:.9}
+header nav{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;letter-spacing:.04em;margin-bottom:18px}
+header nav a{color:var(--bandtxt);text-decoration:none;opacity:.7}
+header nav a.on{opacity:1;border-bottom:2px solid var(--mustard)}
+header nav b{margin-right:12px;letter-spacing:.2em;text-transform:uppercase}
+h1{font:italic 400 clamp(34px,7vw,52px)/1.05 Georgia,"Times New Roman",serif;margin:0}
+header p{margin:8px 0 0;opacity:.7;font-size:14px}
+main{max-width:860px;margin:0 auto;padding:28px 20px 70px}
+.row{display:grid;grid-template-columns:64px 1fr;gap:6px 18px;padding:20px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0}
+.no{font:italic 400 40px/1 Georgia,serif;color:var(--needle)}
+.row h2{font:700 15px/1.3 "Helvetica Neue",Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;margin:6px 0 8px}
+.row p,.row ul{margin:0 0 10px}.row ul{padding-left:20px}
+.note{background:var(--sleeve);border-left:5px solid var(--mustard);padding:14px 18px;margin:0 0 10px;font-size:17px}
+code{background:var(--sleeve);border:1px solid var(--line);padding:1px 6px;border-radius:4px;font-size:14px}
+footer{max-width:860px;margin:0 auto;padding:0 20px 40px;color:var(--soft);font-size:13px}
+@media(max-width:520px){.row{grid-template-columns:1fr}.no{font-size:30px}header:after{opacity:.35}}
+
+</style>
+</head>
+<body>
+<header><div class="in"><nav><b>Needla</b><a href="index.html">Home</a><a href="privacy.html" class=on>Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav><h1>Privacy</h1><p>Last updated October 6, 2026</p></div></header>
+<main>
+<div class="row"><div class="no">01</div><div><h2>Short version</h2><p class="note">Your crate stays on your iPhone. A sleeve photo leaves it once, to be read, and only after you agree. Nothing else about you is collected by us.</p></div></div>
+<div class="row"><div class="no">02</div><div><h2>Your crate</h2><p>The records you save, the grades you give them, your onboarding answers and the app&rsquo;s settings are kept in Needla&rsquo;s own storage on the device. We never receive them. Deleting the app deletes them.</p></div></div>
+<div class="row"><div class="no">03</div><div><h2>Sleeve photos</h2><p>If you scan a sleeve, and only after you tap agree on the consent screen, the photo goes over an encrypted connection to our server function on Google Cloud (Firebase). That function hands it to a vision model (an OpenAI model that Replicate runs) with one job: read the artist, the title and the catalog number. We use the answer to look the record up and do not keep the photo. Replicate and OpenAI handle API requests under their own policies. Say no to the consent screen and you can still find records by typing.</p></div></div>
+<div class="row"><div class="no">04</div><div><h2>Record look-ups</h2><p>Pressings, prices and want/have counts are asked from the public Discogs database straight from your iPhone. A request contains the text you searched or a release number, not your name, and Discogs sees your IP address as any website would. Cover thumbnails are loaded from Discogs the same way.</p></div></div>
+<div class="row"><div class="no">05</div><div><h2>Camera</h2><p>The camera is only used for the sleeve scan. You can switch it off in iOS Settings and keep using search by name.</p></div></div>
+<div class="row"><div class="no">06</div><div><h2>Purchases</h2><p>Apple processes payment and we never see card details. To show the right plan and unlock Pro, the app uses Adapty, which gets an anonymous install ID, purchase status and basic in-app events such as “paywall shown”. It is not linked to who you are.</p></div></div>
+<div class="row"><div class="no">07</div><div><h2>What is not here</h2><ul><li>No accounts or sign-in.</li><li>No advertising code and no tracking across apps or sites.</li><li>No selling or sharing of personal data.</li></ul></div></div>
+<div class="row"><div class="no">08</div><div><h2>Who handles data for us</h2><p>Google Cloud / Firebase (server function), Replicate and OpenAI (sleeve reading), Discogs (record database), Adapty (subscription status), Apple (payments). Needla is independent and is not endorsed by any of them.</p></div></div>
+<div class="row"><div class="no">09</div><div><h2>Children and changes</h2><p>Needla is not made for children under 13. If this page changes, the date at the top changes too. Questions: <a href="mailto:netkaktakto@gmail.com">netkaktakto@gmail.com</a>.</p></div></div>
+</main>
+<footer>Needla · October 6, 2026 · <a href="mailto:netkaktakto@gmail.com">netkaktakto@gmail.com</a></footer>
+</body>
+</html>
